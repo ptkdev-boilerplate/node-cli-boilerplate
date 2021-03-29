@@ -1,11 +1,10 @@
 {
 	"compilerOptions": {
-		"module": "ES2020",
+		"module": "CommonJS",
 		"target": "ES2019",
 		"noImplicitAny": false,
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
-		"isolatedModules": true,
 		"types": ["node"]
 	},
 	"include": ["**/*.ts"]

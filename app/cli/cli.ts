@@ -9,10 +9,10 @@
  * @license: MIT License
  *
  */
-import m from "./module";
+import m from "../functions/module";
 
 (async () => {
 	const { app } = await m({ text: "hello-world" });
 
-	await console.log(app());
+	console.log(app());
 })();
