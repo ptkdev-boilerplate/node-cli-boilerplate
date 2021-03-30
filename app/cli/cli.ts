@@ -9,10 +9,12 @@
  * @license: MIT License
  *
  */
-import m from "../functions/module";
+import m from "@app/functions/module";
+import configs from "@configs/config";
 
 (async () => {
 	const { app } = await m({ text: "hello-world" });
 
 	console.log(app());
+	console.log(`debug: ${configs.debug}`);
 })();

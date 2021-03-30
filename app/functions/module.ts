@@ -8,7 +8,7 @@
  * @license: MIT License
  *
  */
-import type { ModuleInterface, ModuleResponseInterface } from "../types/module.type";
+import type { ModuleInterface, ModuleResponseInterface } from "@app/types/module.type";
 
 /**
  * Hello World
@@ -18,7 +18,6 @@ import type { ModuleInterface, ModuleResponseInterface } from "../types/module.t
  * @param {string} text - input string
  *
  * @return {Promise<ModuleResponseInterface>} fn - output string (async), run app()
-
  */
 export default async ({ text }: ModuleInterface): Promise<ModuleResponseInterface> => {
 	const app = () => text;

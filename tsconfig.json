@@ -6,13 +6,23 @@
 		"outDir": "./dist/",
 		"lib": ["es2017", "es7", "es6", "DOM"],
 		"baseUrl": ".",
+		"resolveJsonModule": true,
 		"moduleResolution": "node",
 		"esModuleInterop": true,
-		"noImplicitAny": true,
+		"noImplicitAny": false,
 		"noImplicitThis": true,
 		"declaration": true,
-		"typeRoots": ["app/**/types", "node_modules/@types"]
+		"strict": false,
+		"skipLibCheck": true,
+		"allowJs": true,
+		"paths": {
+			"@translations/*": ["./app/translations/*"],
+			"@configs/*": ["./app/configs/*"],
+			"@app/*": ["./app/*"]
+		},
+		"typeRoots": ["app/**/types", "node_modules/@types"],
+		"plugins": [{ "transform": "typescript-transform-paths" }, { "transform": "typescript-transform-paths", "afterDeclarations": true }]
 	},
-	"include": ["app/**/*", "configs/**/*", "translations/**/*"],
+	"include": ["app/**/*"],
 	"exclude": ["node_modules/*", "dist/*", "scripts/*"]
 }

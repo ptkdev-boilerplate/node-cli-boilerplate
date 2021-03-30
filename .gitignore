@@ -121,11 +121,6 @@ npm-debug.log
 
 # App #
 #######
-config.js
-config/*.js
-configs/*.js
-config.ts
-config/*.ts
-configs/*.ts
+/app/configs/config.js
 /dist
 /build
