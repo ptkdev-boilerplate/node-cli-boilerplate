@@ -30,7 +30,7 @@
 	"scripts": {
 		"start": "node dist/cli/cli.js",
 		"link": "npm link",
-		"unlink": "npm link",
+		"unlink": "npm unlink",
 		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && rm -rf dist && nodemon --exec 'npm run build && npm run start'",
 		"build": "ttsc",
 		"release": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --disable && npm run build",
