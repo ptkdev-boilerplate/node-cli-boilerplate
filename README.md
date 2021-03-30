@@ -41,8 +41,8 @@ Create node cli with this friendly boilerplate. Use this respository as template
 
 ## 🚀 Usage
 
-1. In your node project run: `npm install @ptkdev/node-cli-boilerplate -g`
-2. Usage, run anywhere: `node-cli-boilerplate`
+1. Install cli package globally: `npm install @ptkdev/node-cli-boilerplate -g`
+2. Run anywhere: `node-cli-boilerplate`
 
 You can use npx, example: `npx @ptkdev/node-cli-boilerplate`
 
