@@ -1,7 +1,7 @@
 # 🪓 node-cli-boilerplate
 
 <!-- all-shields/header-badges:START -->
-[![v1.0.20210330](https://img.shields.io/badge/version-v1.0.20210330-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-cli-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-cli-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io) 
+[![v1.0.20210331](https://img.shields.io/badge/version-v1.0.20210331-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-cli-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-cli-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io) 
 <!-- all-shields/header-badges:END -->
 
 Create node cli with this friendly boilerplate. Use this respository as template for your new node command line interface project
@@ -17,6 +17,7 @@ Create node cli with this friendly boilerplate. Use this respository as template
 ## 📎 Menu
 
 -   💡 [Features](#-features)
+-   🚀 [How to use](#-usage)
 -   🔨 [Developer Mode](#-developer-mode)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
@@ -37,6 +38,13 @@ Create node cli with this friendly boilerplate. Use this respository as template
 -   [✔️] Full async code
 -   [✔️] i18n translations
 -   [✔️] Github and Vscode dotfiles preconfigured
+
+## 🚀 Usage
+
+1. In your node project run: `npm install @ptkdev/node-cli-boilerplate -g`
+2. Usage, run anywhere: `node-cli-boilerplate`
+
+You can use npx, example: `npx @ptkdev/node-cli-boilerplate`
 
 ## 🔨 Developer Mode
 

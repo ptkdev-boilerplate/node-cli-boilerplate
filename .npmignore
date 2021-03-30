@@ -1,4 +1,6 @@
 **/*
+!/.husky
+!/.github
 !/dist/**/*
 !/extra/**/*
 !*.md

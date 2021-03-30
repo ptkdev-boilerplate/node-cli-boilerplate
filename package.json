@@ -2,11 +2,12 @@
 	"name": "@ptkdev/node-cli-boilerplate",
 	"displayName": "Node Command Line Interface Boilerplate",
 	"description": "Create node cli with this friendly boilerplate. Use this respository as template for your new node command line interface project",
-	"version": "1.0.20210330",
+	"version": "1.0.20210331",
 	"main": "dist/cli/cli.js",
 	"types": "dist/types/module.type.d.js",
 	"bin": {
-		"node-cli-boilerplate": "dist/cli/cli.js"
+		"node-cli-boilerplate": "dist/cli/cli.js",
+		"@ptkdev/node-cli-boilerplate": "dist/cli/cli.js"
 	},
 	"publishConfig": {
 		"access": "public"
@@ -48,10 +49,9 @@
 		"contributors-generate": "all-contributors generate",
 		"all-shields-generate": "all-shields-generate",
 		"pre-commit": "npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",
-		"pkg-clean": "rm -rf node_modules package-lock.json && npm install",
+		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && husky install",
 		"pkg-update": "npm update",
-		"pkg-upgrade": "npx npm-check-updates -u && npm install",
-		"postinstall": "husky install"
+		"pkg-upgrade": "npx npm-check-updates -u && npm install && husky install"
 	},
 	"devDependencies": {
 		"@ptkdev/all-shields-cli": "^1.3.0",
