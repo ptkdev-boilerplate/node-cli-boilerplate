@@ -89,7 +89,9 @@
 		"npx",
 		"node-command",
 		"node-command-line",
-		"boilerplate"
+		"command-line-tool",
+		"boilerplate",
+		"github-template"
 	],
 	"contributors": []
 }
