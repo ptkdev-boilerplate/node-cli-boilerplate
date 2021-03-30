@@ -21,7 +21,7 @@ Create your node module (library) with this friendly boilerplate.
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 -   🍻 Community:
-    -   <img src="https://raw.githubusercontent.com/ptkdev-boilerplate/node-cli-boilerplate/main/.github/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English Channel](https://discord.gg/YkMG26f) | [🇮🇹 Italian Channel](https://discord.gg/HFtdBAJ) | [🇵🇱 Polish Channel](https://discord.gg/TV5EXFd))
+    -   <img src="https://raw.githubusercontent.com/ptkdev-boilerplate/node-cli-boilerplate/main/.github/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English Channel](https://discord.gg/jqUSGPKdmA) | [🇮🇹 Italian Channel](https://discord.gg/SJFcbvG6RU) | [🇵🇱 Polish Channel](https://discord.gg/25vg4VFhb7))
 
 ## 💡 Features
 
