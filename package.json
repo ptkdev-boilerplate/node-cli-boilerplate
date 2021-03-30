@@ -1,7 +1,7 @@
 {
 	"name": "@ptkdev/node-cli-boilerplate",
 	"displayName": "Node Command Line Interface Boilerplate",
-	"description": "Create your node module (library) with this friendly boilerplate",
+	"description": "Create node cli with this friendly boilerplate",
 	"version": "1.0.20210330",
 	"main": "dist/cli/cli.js",
 	"types": "dist/types/module.type.d.js",
@@ -82,6 +82,13 @@
 		"node",
 		"node-module",
 		"node-library",
+		"node-cli",
+		"node-cli-bolerplate",
+		"node-line-interface",
+		"node-cmd",
+		"npx",
+		"node-command",
+		"node-command-line",
 		"boilerplate"
 	],
 	"contributors": []
