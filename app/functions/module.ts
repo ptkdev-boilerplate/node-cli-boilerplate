@@ -18,11 +18,14 @@ import type { ModuleInterface, ModuleResponseInterface } from "@app/types/module
  * @param {string} text - input string
  *
  * @return {Promise<ModuleResponseInterface>} fn - output string (async), run app()
+ *
  */
-export default async ({ text }: ModuleInterface): Promise<ModuleResponseInterface> => {
+const m = async ({ text }: ModuleInterface): Promise<ModuleResponseInterface> => {
 	const app = () => text;
 
 	return {
 		app
 	};
 };
+
+export default m;

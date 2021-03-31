@@ -18,8 +18,8 @@ const path = `${__dirname}/../app/configs/config.js`;
 
 if (fs.existsSync(path)) {
 	if (argv.enable) {
-		shell.exec(`sed -i 's/"debug": false/"debug": true/g' ${path}`);
+		shell.sed("-i", '"debug": false', '"debug": true', path);
 	} else {
-		shell.exec(`sed -i 's/"debug": true/"debug": false/g' ${path}`);
+		shell.sed("-i", '"debug": true', '"debug": false', path);
 	}
 }

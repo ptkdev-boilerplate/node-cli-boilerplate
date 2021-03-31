@@ -4,7 +4,6 @@
 	"description": "Create node cli with this friendly boilerplate. Use this respository as template for your new node command line interface project",
 	"version": "1.0.20210331",
 	"main": "dist/cli/cli.js",
-	"types": "dist/types/module.type.d.js",
 	"bin": {
 		"node-cli-boilerplate": "dist/cli/cli.js",
 		"@ptkdev/node-cli-boilerplate": "dist/cli/cli.js"
