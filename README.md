@@ -18,6 +18,7 @@ Create node cli with this friendly boilerplate. Use this respository as template
 
 -   💡 [Features](#-features)
 -   🚀 [How to use](#-usage)
+-   📚 [Documentation](#-documentation)
 -   🔨 [Developer Mode](#-developer-mode)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
@@ -36,8 +37,8 @@ Create node cli with this friendly boilerplate. Use this respository as template
 -   [✔️] all-contributors-cli and all-shields-cli preconfigured
 -   [✔️] JEST Test preconfigured
 -   [✔️] Full async code
--   [✔️] i18n translations
 -   [✔️] Github and Vscode dotfiles preconfigured
+-   [✔️] Translations: 🇬🇧 🇮🇹 🇵🇱 (Help me ❤️)
 
 ## 🚀 Usage
 
