@@ -2,7 +2,7 @@
 	"name": "@ptkdev/node-cli-boilerplate",
 	"displayName": "Node Command Line Interface Boilerplate",
 	"description": "Create node cli with this friendly boilerplate. Use this respository as template for your new node command line interface project",
-	"version": "1.0.20210331",
+	"version": "1.0.20210404",
 	"main": "dist/cli/cli.js",
 	"bin": {
 		"node-cli-boilerplate": "dist/cli/cli.js",
@@ -28,6 +28,8 @@
 		"node": ">=14.0.0"
 	},
 	"scripts": {
+		"init": "npm install && husky install",
+		"setup": "ts-node --skip-project scripts/setup.ts && ts-node --skip-project scripts/changelog.ts && npm run pre-commit",
 		"start": "node dist/cli/cli.js",
 		"link": "npm link",
 		"unlink": "npm unlink",
