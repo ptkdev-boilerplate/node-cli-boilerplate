@@ -13,8 +13,8 @@ import * as shell from "shelljs";
 
 declare const __dirname: string;
 
-const path = `${__dirname}/../app/configs/config.js`;
+const path = `${__dirname}/../app/configs/config.json`;
 
 if (!fs.existsSync(path)) {
-	shell.cp("-Rf", `${__dirname}/../app/configs/config.js.tpl`, path);
+	shell.cp("-Rf", `${__dirname}/../app/configs/config.json.tpl`, `${path}`);
 }

@@ -1,7 +1,8 @@
-# v1.0.20210412 (April 12, 2021)
+# v1.0.20210930 (September 30, 2021)
 
--   Fix: minor fix
--   Fix: readme of issues
+-   Security: update
+-   Feature: translations
+-   Fix: logs
 
 <!-- all-shields/sponsors-badges:START -->
 

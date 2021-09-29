@@ -14,7 +14,7 @@ import { argv } from "yargs";
 
 declare const __dirname: string;
 
-const path = `${__dirname}/../app/configs/config.js`;
+const path = `${__dirname}/../app/configs/config.json`;
 
 if (fs.existsSync(path)) {
 	if (argv.enable) {

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /**
  * Translations
  * =====================
@@ -11,4 +12,10 @@
 import en from "@translations/en.json";
 import it from "@translations/it.json";
 
-export default { en, it };
+const translations: any = {
+	en,
+	it,
+};
+
+export { it, en };
+export default translations;
