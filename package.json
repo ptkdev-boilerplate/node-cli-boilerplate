@@ -33,7 +33,7 @@
 		"start": "node dist/cli/cli.js",
 		"link": "npm link",
 		"unlink": "npm unlink @ptkdev/node-cli-boilerplate",
-		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && ts-node scripts/rmdist.ts && nodemon --exec 'ts-node --compiler ttypescript app/core/run.ts'",
+		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && ts-node scripts/rmdist.ts && nodemon --exec 'ts-node --compiler ttypescript app/cli/cli.ts'",
 		"build": "ttsc",
 		"release": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --disable && npm run build && ttsc --declaration --emitDeclarationOnly",
 		"test": "jest app",
