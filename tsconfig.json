@@ -12,6 +12,7 @@
 		"noImplicitAny": true,
 		"noImplicitThis": true,
 		"declaration": false,
+		"skipLibCheck": true,
 		"allowJs": true,
 		"strict": true,
 		"strictNullChecks": true,
@@ -30,5 +31,5 @@
 		]
 	},
 	"include": ["app/**/*"],
-	"exclude": ["node_modules/*", "dist/*", "scripts/*"]
+	"exclude": ["node_modules/*", "app/tests/**/*", "dist/*", "scripts/*", "examples/*"]
 }

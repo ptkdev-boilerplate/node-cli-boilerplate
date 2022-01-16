@@ -9,7 +9,7 @@
  * @license: MIT License
  *
  */
-import type { ModuleInterface, ModuleResponseInterface } from "@app/types/module.type";
+import type { ModuleInterface, ModuleResponseInterface } from "@app/types/module.interfaces";
 
 /**
  * Hello World
@@ -17,7 +17,7 @@ import type { ModuleInterface, ModuleResponseInterface } from "@app/types/module
  *
  * Print hello-world, run with: npx @ptkdev/node-cli-boilerplate
  *
- * @interface [ModuleInterface ModuleResponseInterface](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/app/types/module.type.ts)
+ * @interface [ModuleInterface ModuleResponseInterface](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/app/types/module.interfaces.ts)
  *
  * @param {string} {text} - input string
  *

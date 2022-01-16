@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 /**
  * CLI
  * =====================
@@ -10,13 +10,12 @@
  *
  */
 import m from "@app/functions/module";
-import configs from "@configs/config.json";
 import translate from "@translations/translate";
 import logger from "@app/utils/logger";
 
 (async () => {
-	const { app } = await m({ text: translate("hello", { name: "Boilerplate" }) });
+	const label = translate("hello", { name: "World" }); // This show "Hello World"! Is a literal template string from en.json
+	const { app } = await m({ text: label });
 
 	logger.info(app());
-	logger.debug(configs.debug ? "true" : "false");
 })();

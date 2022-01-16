@@ -7,9 +7,9 @@
  * @license: MIT License
  *
  */
-import configs from "@configs/config.json";
+import configs from "@configs/config";
 import translations from "@app/routes/translations";
-import type { TranslateParamsInterface } from "@app/types/translate.type";
+import type { TranslateParamsInterface } from "@app/types/translate.interfaces";
 
 /**
  * Replace Params
