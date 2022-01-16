@@ -1,4 +1,4 @@
-# v2.0.6 (January 16, 2022)
+# v2.0.1 (January 16, 2022)
 
 -   Fix: CI/CD
 
