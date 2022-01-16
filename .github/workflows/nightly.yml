@@ -5,7 +5,7 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-        if: "!startsWith(github.event.head_commit.message, '[🚀 Release]') || startsWith(github.event.head_commit.message, '[🚀 Release] Nightly')"
+        if: "!startsWith(github.event.head_commit.message, '[🚀 Release Nightly]')"
         steps:
             - uses: actions/checkout@v2
               with:
@@ -23,7 +23,7 @@ jobs:
             - run: npm run pre-commit
             - id: pkgjson
               run: chmod +x ./scripts/version.sh && ./scripts/version.sh
-            - run: git add . && git commit -m "[🚀 Release] v${{ steps.pkgjson.outputs.pkgversion }}" && git push
+            - run: git add . && git commit -m "[🚀 Release Nightly] v${{ steps.pkgjson.outputs.pkgversion }}" && git push
             - run: npm publish --tag nightly
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

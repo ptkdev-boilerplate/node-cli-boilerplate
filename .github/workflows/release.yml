@@ -6,7 +6,6 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-        if: "!startsWith(github.event.head_commit.message, '[🚀 Release]') || startsWith(github.event.head_commit.message, '[🚀 Release] Nightly')"
         steps:
             - uses: actions/checkout@v2
               with:
