@@ -85,7 +85,7 @@ Thanks to all our backers! 🙏 Donate 3$ or more on [paypal](https://www.paypal
 
 ## 👨‍💻 Contributing
 
-I ❤️ contributions! I will happily accept your pull request! (**IMPORTANT**: Only nightly branch!) Translations, grammatical corrections (GrammarNazi you are welcome! Yes my English is bad, sorry), etc... Do not be afraid, if the code is not perfect we will work together 👯 and remember to insert your name in `.all-contributorsrc` and `package.json` file.
+I ❤️ contributions! I will happily accept your pull request! (**IMPORTANT**: Only to nightly branch!) Translations, grammatical corrections (GrammarNazi you are welcome! Yes my English is bad, sorry), etc... Do not be afraid, if the code is not perfect we will work together 👯 and remember to insert your name in `.all-contributorsrc` and `package.json` file.
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
