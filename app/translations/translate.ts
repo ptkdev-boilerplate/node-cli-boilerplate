@@ -7,6 +7,7 @@
  * @license: MIT License
  *
  */
+import configs from "@configs/config";
 import translations from "@app/routes/translations";
 import type { TranslateParamsInterface } from "@app/types/translate.interfaces";
 
@@ -61,10 +62,10 @@ const check = (lang: string, language_id: string): string => {
  * @return {string} text - text of available translation
  *
  */
-const translate = (lang: string, language_id: string, language_params?: TranslateParamsInterface): string => {
+const translate = (language_id: string, language_params?: TranslateParamsInterface): string => {
 	let text = "";
 
-	text = check(lang, language_id);
+	text = check(configs.language, language_id);
 	if (language_params) {
 		text = replaceParams(text, language_params);
 	}
