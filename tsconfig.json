@@ -31,5 +31,5 @@
 		]
 	},
 	"include": ["app/**/*"],
-	"exclude": ["node_modules/*", "app/tests/**/*", "dist/*", "scripts/*", "examples/*"]
+	"exclude": ["node_modules/*", "dist/*", "scripts/*", "examples/*"]
 }
