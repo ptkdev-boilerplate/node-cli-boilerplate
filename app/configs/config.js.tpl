@@ -1,14 +1,14 @@
 module.exports = {
 	server: {
 		// http://localhost:[PORT]
-		port: process.env.PORT || 5000,
+		port: 5000,
 	},
 
 	// Default language
-	language: process.env.LANGUAGE || "en",
+	language: "en",
 
 	// Debug
-	debug: process.env.DEBUG || true,
+	debug: "disabled",
 
 	// LOGS
 	// See: https://github.com/ptkdev/ptkdev-logger
@@ -19,12 +19,12 @@ module.exports = {
 		},
 		language: "en",
 		colors: true,
-		debug: process.env.LOGGER || "enabled",
-		info: process.env.LOGGER || "enabled",
-		warning: process.env.LOGGER || "enabled",
-		error: process.env.LOGGER || "enabled",
-		sponsor: process.env.LOGGER || "enabled",
-		write: process.env.LOGGER_WRITE || false,
+		debug: "enabled",
+		info: "enabled",
+		warning: "enabled",
+		error: "enabled",
+		sponsor: "enabled",
+		write: false,
 		type: "log",
 	},
 };

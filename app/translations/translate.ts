@@ -14,8 +14,8 @@ import type { TranslateParamsInterface } from "@app/types/translate.interfaces";
 /**
  * Replace Params
  * =====================
- * If translation text is: hi {{name}} how are you?
- * This function replace {{name}} token with correct value
+ * If translation text is: hi {name} how are you?
+ * This function replace {name} token with correct value
  *
  * @param {string} text - text of current phrase to translate (mandatory)
  * @param {Object} language_params - object with token to replace, example: {name:"alex"} (mandatory)
@@ -36,15 +36,18 @@ const replaceParams = (text: string, language_params: TranslateParamsInterface):
  * =====================
  * Check if exist translation in selected language, if not exist get string of phrase from "en" translation
  *
+ * @param {string} lang - language from group/user (mandatory)
  * @param {string} language_id - key of translation phrase from /translations/*.json (mandatory)
  *
  * @return {string} text - text of available translation
  *
  */
-const check = (language_id: string): string => {
-	return translations[configs.language] && translations[configs.language][language_id]
-		? translations[configs.language][language_id]
-		: translations["en"][language_id];
+const check = (lang: string, language_id: string): string => {
+	return (
+		translations?.[lang]?.[language_id] ??
+		translations?.["en"]?.[language_id] ??
+		`translation id: ${language_id} in ${lang}.json is undefined`
+	);
 };
 
 /**
@@ -52,6 +55,7 @@ const check = (language_id: string): string => {
  * =====================
  * Get correct translation
  *
+ * @param {string} lang - language from group/user (mandatory)
  * @param {string} language_id - key of translation phrase from /translations/*.json (mandatory)
  * @param {Object} language_params - object with token to replace, example: {name:"alex"} (optional)
  *
@@ -60,7 +64,8 @@ const check = (language_id: string): string => {
  */
 const translate = (language_id: string, language_params?: TranslateParamsInterface): string => {
 	let text = "";
-	text = check(language_id);
+
+	text = check(configs.language, language_id);
 	if (language_params) {
 		text = replaceParams(text, language_params);
 	}
