@@ -1,7 +1,7 @@
 # v2.0.3 (April 06, 2022)
 
--   Security: ppdated dependencies
--   Fix: Readme, build and scripts
+-   Security: updated dependencies
+-   Fix: readme, build and scripts
 
 <!-- all-shields/sponsors-badges:START -->
 
