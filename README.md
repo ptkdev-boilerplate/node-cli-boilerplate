@@ -64,10 +64,9 @@ You can use npx, example: `npx @ptkdev/node-cli-boilerplate`
 1. Clone this repository or download [nightly](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/nightly.zip), [beta](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/beta.zip) or [stable](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/main.zip).
 2. Run `npm install`
 3. Run `npm run build`
-4. Run `npm run link`
+4. Run `npm link` (on unix/mac use `sudo npm link`)
 5. Run `node-cli-boilerplate` anywhere for execute command line tool
-
-or run `npm run dev` for watch mode.
+6. Run `npm run dev` for watch mode and try to update the executable from step `3`.
 
 #### 💾 Setup Project
 
