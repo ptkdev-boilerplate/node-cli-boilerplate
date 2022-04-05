@@ -28,6 +28,7 @@ This is a [github template](https://github.blog/2019-06-06-generate-new-reposito
 -   🔨 [Developer Mode](#-developer-mode)
 -   -   🏁 [Run Project](#-run-project)
 -   -   💾 [Setup Project](#-setup-project)
+-   -   🚀 [Deploy](#-deploy)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 -   🍻 Community:
@@ -63,14 +64,26 @@ You can use npx, example: `npx @ptkdev/node-cli-boilerplate`
 
 1. Clone this repository or download [nightly](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/nightly.zip), [beta](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/beta.zip) or [stable](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/main.zip).
 2. Run `npm install`
-3. Run `npm run build`
-4. Run `npm link` (on unix/mac use `sudo npm link`)
-5. Run `node-cli-boilerplate` anywhere for execute command line tool
-6. Run `npm run dev` for watch mode and try to update the executable from step `3`.
+3. Run `npm run dev` for watch mode
+
+If you want to try cli locally:
+
+4. Run `npm run build`
+5. Run `npm link` (on unix/mac use `sudo npm link`)
+6. Run `node-cli-boilerplate` anywhere for execute command line tool
+
+For uninstall it run `npm unlink` (on unix/mac use `sudo npm unlink`)
 
 #### 💾 Setup Project
 
 If you want replace all strings (example: package name, author, urls, etc...) in markdown file, source files and others files of this project you need edit `setup.json` with correct values and run `npm run setup`.
+
+#### 🚀 Deploy
+
+For create npm package:
+
+-   Run `npm run release`
+-   Run `npm publish`
 
 ## 📚 Documentation
 
