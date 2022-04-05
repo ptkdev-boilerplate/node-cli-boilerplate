@@ -2,7 +2,7 @@
 
 <!-- all-shields/header-badges:START -->
 
-[![v2.0.2](https://img.shields.io/badge/version-v2.0.2-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-cli-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-cli-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
+[![v2.0.3-beta.1](https://img.shields.io/badge/version-v2.0.3--beta.1-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-cli-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-cli-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
 
 <!-- all-shields/header-badges:END -->
 
@@ -28,6 +28,7 @@ This is a [github template](https://github.blog/2019-06-06-generate-new-reposito
 -   🔨 [Developer Mode](#-developer-mode)
 -   -   🏁 [Run Project](#-run-project)
 -   -   💾 [Setup Project](#-setup-project)
+-   -   🚀 [Deploy](#-deploy)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 -   🍻 Community:
@@ -63,15 +64,26 @@ You can use npx, example: `npx @ptkdev/node-cli-boilerplate`
 
 1. Clone this repository or download [nightly](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/nightly.zip), [beta](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/beta.zip) or [stable](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/archive/main.zip).
 2. Run `npm install`
-3. Run `npm run build`
-4. Run `npm run link`
-5. Run `node-cli-boilerplate` anywhere for execute command line tool
+3. Run `npm run dev` for watch mode
 
-or run `npm run dev` for watch mode.
+If you want to try cli locally:
+
+4. Run `npm run build`
+5. Run `npm link` (on unix/mac use `sudo npm link`)
+6. Run `node-cli-boilerplate` anywhere for execute command line tool
+
+For uninstall it run `npm unlink` (on unix/mac use `sudo npm unlink`)
 
 #### 💾 Setup Project
 
 If you want replace all strings (example: package name, author, urls, etc...) in markdown file, source files and others files of this project you need edit `setup.json` with correct values and run `npm run setup`.
+
+#### 🚀 Deploy
+
+For create npm package:
+
+-   Run `npm run release`
+-   Run `npm publish`
 
 ## 📚 Documentation
 
@@ -121,7 +133,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- all-shields/projects-badges3:START -->
 
-[![](https://img.shields.io/badge/%F0%9F%9A%A7%20WebComponents-My%20Collection-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components) [![](https://img.shields.io/badge/%F0%9F%94%96%20Bot-AboutMeInfo-1FA0F2.svg?style=flat&logo=)](https://github.com/ptkdev/aboutmeinfo-telegram-bot) [![](https://img.shields.io/badge/%E2%8F%B1%20Bot-QuizQuickAnswer-FEC91A.svg?style=flat&logo=)](https://github.com/ptkdev/quizquickanswer-telegram-game-bot) [![](https://img.shields.io/badge/%F0%9F%93%9A%20Bot-GameBookChat-34495e.svg?style=flat&logo=)](https://t.me/gamebookchatbot) [![](https://img.shields.io/badge/%F0%9F%8E%A8%20Themes-VSCode-f1c40f.svg?style=flat&logo=)](https://github.com/ptkdev/vscode-theme-dark-blood) [![](https://img.shields.io/badge/%F0%9F%97%84%20Sourcesense-Joyce-CECBE6.svg?style=flat&logo=)](https://github.com/sourcesense/joyce)
+[![](https://img.shields.io/badge/%F0%9F%9A%A7%20WebComponents-My%20Collection-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components) [![](https://img.shields.io/badge/%F0%9F%94%96%20Bot-AboutMeInfo-1FA0F2.svg?style=flat&logo=)](https://github.com/ptkdev/aboutmeinfo-telegram-bot) [![](https://img.shields.io/badge/%E2%8F%B1%20Bot-QuizQuickAnswer-FEC91A.svg?style=flat&logo=)](https://github.com/ptkdev/quizquickanswer-telegram-game-bot) [![](https://img.shields.io/badge/%F0%9F%93%9A%20Bot-GameBookChat-34495e.svg?style=flat&logo=)](https://t.me/gamebookchatbot) [![](https://img.shields.io/badge/%F0%9F%8E%A8%20Themes-VSCode-f1c40f.svg?style=flat&logo=)](https://github.com/ptkdev/vscode-theme-dark-blood)
 
 <!-- all-shields/projects-badges3:END -->
 
@@ -137,4 +149,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 -   Images and logos have **CC BY-NC 4.0 License**
 -   Documentations and Translations have **CC BY 4.0 License**
 
-###### Copyleft (c) 2021 [Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>
+###### Copyleft (c) 2022 [Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>
