@@ -11,6 +11,8 @@
 
 # v2.0.2 (February 21, 2022)
 
+-   Refactor: CI/CD now update the version of the package to the latest (nightly)
+
 # v2.0.1 (January 16, 2022)
 
 -   Fix: CI/CD
