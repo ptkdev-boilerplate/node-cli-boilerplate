@@ -2,7 +2,7 @@
 	"name": "@ptkdev/node-cli-boilerplate",
 	"displayName": "Node Command Line Interface Boilerplate",
 	"description": "Create node cli with this user friendly boilerplate. Use this respository as template for your new npm command line interface project",
-	"version": "2.0.4-nightly.76",
+	"version": "2.0.4-nightly.77",
 	"main": "dist/cli/cli.js",
 	"bin": {
 		"node-cli-boilerplate": "dist/cli/cli.js",
@@ -74,7 +74,7 @@
 		"eslint-plugin-jest": "^26.5.3",
 		"eslint-plugin-jsdoc": "^39.3.3",
 		"husky": "^8.0.1",
-		"jest": "^28.1.1",
+		"jest": "^28.1.2",
 		"json": "^11.0.0",
 		"markserv": "^1.17.4",
 		"nodemon": "^2.0.18",
