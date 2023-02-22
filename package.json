@@ -2,8 +2,9 @@
 	"name": "@ptkdev/node-cli-boilerplate",
 	"displayName": "Node Command Line Interface Boilerplate",
 	"description": "Create node cli with this user friendly boilerplate. Use this respository as template for your new npm command line interface project",
-	"version": "2.0.4-nightly.299",
+	"version": "3.0.0-nightly.0",
 	"main": "dist/cli/cli.js",
+	"type": "module",
 	"bin": {
 		"node-cli-boilerplate": "dist/cli/cli.js",
 		"@ptkdev/node-cli-boilerplate": "dist/cli/cli.js"
@@ -28,8 +29,8 @@
 		"node": ">=14.0.0"
 	},
 	"scripts": {
-		"setup": "ts-node --skip-project scripts/setup.ts && ts-node --skip-project scripts/changelog.ts && npm run pre-commit",
-		"start": "npm run git-hash && node dist/cli/cli.js",
+		"setup": "ts-node scripts/setup.ts && ts-node scripts/changelog.ts && npm run pre-commit",
+		"start": "npm run release && node dist/cli/cli.js",
 		"link": "npm link",
 		"unlink": "npm unlink @ptkdev/node-cli-boilerplate",
 		"dev": "npm run git-hash && ts-node scripts/configs.ts && ts-node scripts/rmdist.ts && ts-node scripts/debug.ts --enable && nodemon --exec 'ts-node app/cli/cli.ts'",
@@ -53,9 +54,9 @@
 		"contributors-generate": "all-contributors generate",
 		"all-shields-generate": "all-shields-generate",
 		"pre-commit": "npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",
-		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && npm install eslint@7 @types/yargs@16 --save-dev && husky install",
+		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && husky install",
 		"pkg-update": "npm update",
-		"pkg-upgrade": "npx --yes npm-check-updates -u && npm install && npm install eslint@7 @types/yargs@16 --save-dev && husky install",
+		"pkg-upgrade": "npx --yes npm-check-updates -u && npm install --save-dev && husky install",
 		"prepare": "ts-patch install -s && husky install"
 	},
 	"dependencies": {
@@ -66,11 +67,11 @@
 		"@types/jest": "^29.4.0",
 		"@types/node": "^18.14.0",
 		"@types/shelljs": "^0.8.11",
-		"@types/yargs": "^16.0.5",
+		"@types/yargs": "^17.0.22",
 		"@typescript-eslint/eslint-plugin": "^5.53.0",
 		"@typescript-eslint/parser": "^5.53.0",
 		"all-contributors-cli": "^6.24.0",
-		"eslint": "^7.32.0",
+		"eslint": "^8.34.0",
 		"eslint-plugin-jest": "^27.2.1",
 		"eslint-plugin-jsdoc": "^40.0.0",
 		"husky": "^8.0.3",

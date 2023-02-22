@@ -12,15 +12,16 @@
  *
  */
 import Logger from "@ptkdev/logger";
-const replace = require("replace-in-file");
-const setup = require("../setup.json");
-const pkg = require("../package.json");
+
+import replace from "replace-in-file";
+import setup from "../setup.json" assert { type: "json" };
+import pkg from "../package.json" assert { type: "json" };
 
 const logger = new Logger();
 
 (async () => {
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /github.com\/ptkdev-boilerplate\/node-cli-boilerplate/g,
@@ -31,7 +32,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /github.com\/ptkdev\/node-cli-boilerplate/g,
@@ -42,7 +43,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /githubusercontent.com\/ptkdev-boilerplate/g,
@@ -53,7 +54,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /githubusercontent.com\/ptkdev/g,
@@ -64,7 +65,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /github.com\/ptkdev-boilerplate/g,
@@ -75,7 +76,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /github.com\/ptkdev/g,
@@ -86,7 +87,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /@ptkdev\/node-cli-boilerplate/g,
@@ -97,7 +98,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /Node Command Line Interface Boilerplate/g,
@@ -108,7 +109,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /Create node cli with this user friendly boilerplate. Use this respository as template for your new npm command line interface project/g,
@@ -119,7 +120,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /Patryk Rzucidło \[@ptkdev\] <support@ptkdev.io> \(https:\/\/ptk.dev\)/g,
@@ -130,7 +131,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /\[Patryk Rzucidło\]\(https:\/\/ptk.dev\) \(\[@PTKDev\]\(https:\/\/twitter.com\/ptkdev\)\) <\[support@ptkdev.io\]\(mailto:support@ptkdev.io\)>/g,
@@ -141,7 +142,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: [".all-contributorsrc"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts"],
 			from: /"projectName": "ptkdev-boilerplate\/node-cli-boilerplate"/g,
@@ -152,7 +153,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: [".all-contributorsrc"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts"],
 			from: /"projectOwner": "ptkdev"/g,
@@ -163,7 +164,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: [".github/**/*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts"],
 			from: /ptkdev/g,
@@ -174,7 +175,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /node-cli-boilerplate/g,
@@ -185,7 +186,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 			from: /support@ptkdev.io/g,
@@ -196,7 +197,7 @@ const logger = new Logger();
 	}
 
 	try {
-		await replace({
+		await replace.sync({
 			files: ["package.json"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts"],
 			from: pkg.version,

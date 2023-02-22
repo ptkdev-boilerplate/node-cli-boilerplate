@@ -8,18 +8,20 @@
  * @license: MIT License
  *
  */
-import * as fs from "fs";
-import * as shell from "shelljs";
-import { argv } from "yargs";
+import fs from "fs";
+import shell from "shelljs";
+import yargs from "yargs";
+import path from "path";
+const argv: any = yargs(process.argv.slice(2)).argv;
 
-declare const __dirname: string;
+const __dirname = path.resolve();
 
-const path = `${__dirname}/../app/configs/config.js`;
+const path_config = `${__dirname}/../app/configs/config.ts`;
 
-if (fs.existsSync(path)) {
+if (fs.existsSync(path_config)) {
 	if (argv.enable) {
-		shell.sed("-i", 'debug: "disabled"', 'debug: "enabled"', path);
+		shell.sed("-i", 'debug: "disabled"', 'debug: "enabled"', path_config);
 	} else {
-		shell.sed("-i", 'debug: "enabled"', 'debug: "disabled"', path);
+		shell.sed("-i", 'debug: "enabled"', 'debug: "disabled"', path_config);
 	}
 }

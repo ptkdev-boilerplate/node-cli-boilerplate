@@ -3,13 +3,16 @@
  * =====================
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
+ *                Alì Shadman [@AliShadman95] (https://github.com/AliShadman95)
  *
  * @license: MIT License
  *
  */
-import * as shell from "shelljs";
-declare const __dirname: string;
+import shell from "shelljs";
+import path from "path";
 
-const path = `${__dirname}/../dist`;
+const __dirname = path.resolve();
 
-shell.rm("-Rf", path);
+const path_dist = `${__dirname}/../dist`;
+
+shell.rm("-Rf", path_dist);

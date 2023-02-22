@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#! /usr/bin/env node --no-warnings
 /**
  * CLI
  * =====================
@@ -9,9 +9,9 @@
  * @license: MIT License
  *
  */
-import m from "@app/functions/module";
-import translate from "@translations/translate";
-import logger from "@app/utils/logger";
+import m from "@app/functions/module.js";
+import translate from "@translations/translate.js";
+import logger from "@app/utils/logger.js";
 
 (async () => {
 	const label = translate("hello", { name: "World" }); // This show "Hello World"! Is a literal template string from en.json

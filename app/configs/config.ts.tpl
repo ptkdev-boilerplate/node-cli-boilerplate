@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	server: {
 		// http://localhost:[PORT]
 		port: 5000,
@@ -11,7 +11,7 @@ module.exports = {
 	debug: "disabled",
 
 	// LOGS
-	// See: https://github.com/ptkdev/ptkdev-logger
+	// See: https://github.com/ptkdev-boilerplate/ptkdev-logger
 	logger: {
 		path: {
 			debug_log: "./logs/debug.log",
@@ -19,7 +19,7 @@ module.exports = {
 		},
 		language: "en",
 		colors: true,
-		debug: "enabled",
+		debug: "disabled",
 		info: "enabled",
 		warning: "enabled",
 		error: "enabled",

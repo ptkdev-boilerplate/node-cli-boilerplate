@@ -8,15 +8,17 @@
  * @license: MIT License
  *
  */
-import * as fs from "fs";
+import fs from "fs";
 import Logger from "@ptkdev/logger";
-import { argv } from "yargs";
-import pkg from "../package.json";
+import yargs from "yargs";
+import pkg from "../package.json" assert { type: "json" };
 
 const logger = new Logger();
 
 const version = pkg.version.split(".");
 let next_version, patch;
+
+const argv: any = yargs(process.argv.slice(2)).argv;
 
 switch (argv.cmd) {
 	case "nightly":
