@@ -11,11 +11,11 @@
 import fs from "fs";
 import shell from "shelljs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const __dirname = path.resolve();
-
-const config_path = `${__dirname}/app/configs/config.ts`;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const config_path = `${__dirname}/../app/configs/config.ts`;
 
 if (!fs.existsSync(config_path)) {
-	shell.cp("-Rf", `${__dirname}/app/configs/config.ts.tpl`, config_path);
+	shell.cp("-Rf", `${__dirname}/../app/configs/config.ts.tpl`, config_path);
 }

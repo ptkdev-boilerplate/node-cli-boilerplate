@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable no-console */
 /**
  * Setup
  * =====================
@@ -12,11 +9,14 @@
  *
  */
 import Logger from "@ptkdev/logger";
-
 import replace from "replace-in-file";
-import setup from "../setup.json" assert { type: "json" };
-import pkg from "../package.json" assert { type: "json" };
+import path from "path";
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const setup = JSON.parse(readFileSync(`${__dirname}/../setup.json`, "utf8"));
+const pkg = JSON.parse(readFileSync(`${__dirname}/../package.json`, "utf8"));
 const logger = new Logger();
 
 (async () => {

@@ -10,8 +10,9 @@
  */
 import shell from "shelljs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const __dirname = path.resolve();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const path_dist = `${__dirname}/../dist`;
 

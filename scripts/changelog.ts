@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * Reset CHANGELOG
  * =====================
@@ -11,8 +10,9 @@
  */
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const __dirname = path.resolve();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const changelog = `# v1.0.0 (${new Date().toLocaleString("en-us", {
 	month: "long",

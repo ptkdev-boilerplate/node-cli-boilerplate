@@ -11,7 +11,11 @@
 import fs from "fs";
 import Logger from "@ptkdev/logger";
 import yargs from "yargs";
-import pkg from "../package.json" assert { type: "json" };
+import path from "path";
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const pkg = JSON.parse(readFileSync(`${__dirname}/../package.json`, "utf8"));
 
 const logger = new Logger();
 
@@ -47,8 +51,8 @@ switch (argv.cmd) {
 
 pkg.version = next_version;
 
-if (fs.existsSync("./package.json")) {
-	fs.writeFile("./package.json", JSON.stringify(pkg), function writeJSON(error) {
+if (fs.existsSync(`${__dirname}/../package.json`)) {
+	fs.writeFile(`${__dirname}/../package.json`, JSON.stringify(pkg), function writeJSON(error) {
 		if (error) {
 			logger.error(JSON.stringify(error));
 		}

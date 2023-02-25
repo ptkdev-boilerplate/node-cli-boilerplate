@@ -12,9 +12,12 @@ import Logger from "@ptkdev/logger";
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
-import semver from "../package.json" assert { type: "json" };
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
 
-const __dirname = path.resolve();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const semver = JSON.parse(readFileSync(`${__dirname}/../package.json`, "utf8"));
+
 const gitdotfile = `${__dirname}/../.git/config`;
 const logger = new Logger();
 let branch = "";

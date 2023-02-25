@@ -12,10 +12,10 @@ import fs from "fs";
 import shell from "shelljs";
 import yargs from "yargs";
 import path from "path";
+import { fileURLToPath } from "url";
+
 const argv: any = yargs(process.argv.slice(2)).argv;
-
-const __dirname = path.resolve();
-
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const path_config = `${__dirname}/../app/configs/config.ts`;
 
 if (fs.existsSync(path_config)) {

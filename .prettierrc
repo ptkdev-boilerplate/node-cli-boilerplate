@@ -5,5 +5,11 @@
 	"singleQuote": false,
 	"tabWidth": 4,
 	"trailingComma": "all",
-	"useTabs": true
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": [".all-shieldsrc", ".all-contributorsrc"],
+			"options": { "parser": "json" }
+		}
+	]
 }
