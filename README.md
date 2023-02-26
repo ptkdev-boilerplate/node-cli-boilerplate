@@ -2,7 +2,7 @@
 
 <!-- all-shields/header-badges:START -->
 
-[![v2.0.4-nightly.303](https://img.shields.io/badge/version-v2.0.4--nightly.303-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-cli-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-cli-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
+[![v3.0.0-nightly.0](https://img.shields.io/badge/version-v3.0.0--nightly.0-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-cli-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-cli-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
 
 <!-- all-shields/header-badges:END -->
 
@@ -151,4 +151,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 -   Images and logos have **CC BY-NC 4.0 License**
 -   Documentations and Translations have **CC BY 4.0 License**
 
-###### Copyleft (c) 2022 [Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>
+###### Copyleft (c) 2023 [Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>

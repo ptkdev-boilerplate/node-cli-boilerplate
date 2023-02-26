@@ -8,15 +8,21 @@
  * @license: MIT License
  *
  */
-import * as fs from "fs";
+import fs from "fs";
 import Logger from "@ptkdev/logger";
-import { argv } from "yargs";
-import pkg from "../package.json";
+import yargs from "yargs";
+import path from "path";
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const pkg = JSON.parse(readFileSync(`${__dirname}/../package.json`, "utf8"));
 
 const logger = new Logger();
 
 const version = pkg.version.split(".");
 let next_version, patch;
+
+const argv: any = yargs(process.argv.slice(2)).argv;
 
 switch (argv.cmd) {
 	case "nightly":
@@ -45,8 +51,8 @@ switch (argv.cmd) {
 
 pkg.version = next_version;
 
-if (fs.existsSync("./package.json")) {
-	fs.writeFile("./package.json", JSON.stringify(pkg), function writeJSON(error) {
+if (fs.existsSync(`${__dirname}/../package.json`)) {
+	fs.writeFile(`${__dirname}/../package.json`, JSON.stringify(pkg), function writeJSON(error) {
 		if (error) {
 			logger.error(JSON.stringify(error));
 		}

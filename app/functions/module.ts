@@ -9,7 +9,7 @@
  * @license: MIT License
  *
  */
-import type { ModuleInterface, ModuleResponseInterface } from "@app/types/module.interfaces";
+import type { ModuleInterface, ModuleResponseInterface } from "@app/types/module.interfaces.js";
 
 /**
  * Hello World
