@@ -2,11 +2,8 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 export default {
-	// Default language
-	language: process.env.language || "en",
-
-	// Debug
-	debug: process.env.DEBUG || "enabled",
+	// Default language i18n (from /app/translations/)
+	language: process.env.LANGUAGE || "en", // available: en | it
 
 	// LOGS
 	// See: https://github.com/ptkdev/ptkdev-logger
@@ -17,7 +14,7 @@ export default {
 		},
 		language: process.env.LOGGER_LANGUAGE || "en",
 		colors: process.env.LOGGER_COLORS || true,
-		debug: process.env.LOGGER_DEBUG || "enabled",
+		debug: process.env.DEBUG || process.env.LOGGER_DEBUG || "enabled",
 		info: process.env.LOGGER_INFO || "enabled",
 		warning: process.env.LOGGER_WARNING || "enabled",
 		error: process.env.LOGGER_ERROR || "enabled",
