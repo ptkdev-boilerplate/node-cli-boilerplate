@@ -54,7 +54,7 @@
 		"fetch-shields": "ts-node scripts/update_dotfiles.ts",
 		"contributors-generate": "npm run fetch-shields && all-contributors generate",
 		"all-shields-generate": "all-shields-generate",
-		"pre-commit": "npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",
+		"pre-commit": "ts-node scripts/copyright.ts && npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",
 		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && husky install",
 		"pkg-update": "npm update",
 		"pkg-upgrade": "npx --yes npm-check-updates -u && npm install --save-dev && husky install",

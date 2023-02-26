@@ -14,7 +14,7 @@ export default {
 		},
 		language: process.env.LOGGER_LANGUAGE || "en",
 		colors: process.env.LOGGER_COLORS || true,
-		debug: process.env.DEBUG || process.env.LOGGER_DEBUG || "enabled",
+		debug: process.env.LOGGER_DEBUG || process.env.DEBUG || "enabled",
 		info: process.env.LOGGER_INFO || "enabled",
 		warning: process.env.LOGGER_WARNING || "enabled",
 		error: process.env.LOGGER_ERROR || "enabled",
