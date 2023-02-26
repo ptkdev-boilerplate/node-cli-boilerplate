@@ -13,10 +13,10 @@ import replace from "replace-in-file";
 const logger = new Logger();
 
 try {
-	const regex_input = new RegExp(`(Copyright (c) )(\\d{4})`, "g");
+	const regex_input = new RegExp(`(Copyright \\(c\\) )(\\d{4})`, "g");
 
 	await replace.sync({
-		files: ["**/*.md"],
+		files: ["*.md"],
 		// @ts-ignore
 		processor: (input) => input.replace(regex_input, `$1${new Date().getFullYear()}`),
 	});
@@ -25,10 +25,10 @@ try {
 }
 
 try {
-	const regex_input = new RegExp(`(Copyleft (c) )(\\d{4})`, "g");
+	const regex_input = new RegExp(`(Copyleft \\(c\\) )(\\d{4})`, "g");
 
 	await replace.sync({
-		files: ["**/*.md"],
+		files: ["*.md"],
 		// @ts-ignore
 		processor: (input) => input.replace(regex_input, `$1${new Date().getFullYear()}`),
 	});
