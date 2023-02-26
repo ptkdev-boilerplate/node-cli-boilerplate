@@ -23,50 +23,6 @@ try {
 	await replace.sync({
 		files: ["**/*", ".*", "**/.*"],
 		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-		from: /github.com\/ptkdev-boilerplate\/node-cli-boilerplate/g,
-		to: setup.github_full_repository_url,
-	});
-} catch (error) {
-	logger.error(JSON.stringify(error));
-}
-
-try {
-	await replace.sync({
-		files: ["**/*", ".*", "**/.*"],
-		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-		from: /github.com\/ptkdev\/node-cli-boilerplate/g,
-		to: setup.github_full_repository_url,
-	});
-} catch (error) {
-	logger.error(JSON.stringify(error));
-}
-
-try {
-	await replace.sync({
-		files: ["**/*", ".*", "**/.*"],
-		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-		from: /githubusercontent.com\/ptkdev-boilerplate/g,
-		to: setup.github_repository_url.replace("github.com", "githubusercontent.com"),
-	});
-} catch (error) {
-	logger.error(JSON.stringify(error));
-}
-
-try {
-	await replace.sync({
-		files: ["**/*", ".*", "**/.*"],
-		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-		from: /githubusercontent.com\/ptkdev/g,
-		to: setup.github_repository_url.replace("github.com", "githubusercontent.com"),
-	});
-} catch (error) {
-	logger.error(JSON.stringify(error));
-}
-
-try {
-	await replace.sync({
-		files: ["**/*", ".*", "**/.*"],
-		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
 		from: /github.com\/ptkdev-boilerplate/g,
 		to: setup.github_repository_url,
 	});
@@ -78,8 +34,19 @@ try {
 	await replace.sync({
 		files: ["**/*", ".*", "**/.*"],
 		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-		from: /github.com\/ptkdev/g,
-		to: setup.github_repository_url,
+		from: /node-cli-boilerplate/g,
+		to: setup.github_repository_name,
+	});
+} catch (error) {
+	logger.error(JSON.stringify(error));
+}
+
+try {
+	await replace.sync({
+		files: ["**/*", ".*", "**/.*"],
+		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
+		from: /githubusercontent.com\/ptkdev-boilerplate/g,
+		to: setup.github_repository_url.replace("github.com", "githubusercontent.com"),
 	});
 } catch (error) {
 	logger.error(JSON.stringify(error));
@@ -122,8 +89,8 @@ try {
 	await replace.sync({
 		files: ["**/*", ".*", "**/.*"],
 		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-		from: /Patryk Rzucidło \[@ptkdev\] <support@ptkdev.io> \(https:\/\/ptk.dev\)/g,
-		to: setup.author,
+		from: /Patryk Rzucidło/g,
+		to: setup.author_name,
 	});
 } catch (error) {
 	logger.error(JSON.stringify(error));
@@ -133,8 +100,8 @@ try {
 	await replace.sync({
 		files: ["**/*", ".*", "**/.*"],
 		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-		from: /\[Patryk Rzucidło\]\(https:\/\/ptk.dev\) \(\[@PTKDev\]\(https:\/\/twitter.com\/ptkdev\)\) <\[support@ptkdev.io\]\(mailto:support@ptkdev.io\)>/g,
-		to: setup.author_markdown,
+		from: /PTKDev/g,
+		to: setup.author_nickname,
 	});
 } catch (error) {
 	logger.error(JSON.stringify(error));
@@ -145,7 +112,9 @@ try {
 		files: [".all-contributorsrc"],
 		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts"],
 		from: /"projectName": "ptkdev-boilerplate\/node-cli-boilerplate"/g,
-		to: `"projectName": "${setup.github_full_repository_url.replace("github.com/", "")}"`,
+		to: `"projectName": "${setup.github_repository_url.replace("github.com/", "")}/${
+			setup.github_repository_name
+		}"`,
 	});
 } catch (error) {
 	logger.error(JSON.stringify(error));
@@ -156,7 +125,7 @@ try {
 		files: [".all-contributorsrc"],
 		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts"],
 		from: /"projectOwner": "ptkdev"/g,
-		to: `"projectOwner": "${setup.github_nickname}"`,
+		to: `"projectOwner": "${setup.author_nickname.toLowerCase()}"`,
 	});
 } catch (error) {
 	logger.error(JSON.stringify(error));
@@ -164,10 +133,10 @@ try {
 
 try {
 	await replace.sync({
-		files: [".github/**/*"],
+		files: ["**/*"],
 		ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts"],
-		from: /ptkdev/g,
-		to: setup.github_nickname,
+		from: /@ptkdev/g,
+		to: setup.author_twitter,
 	});
 } catch (error) {
 	logger.error(JSON.stringify(error));
