@@ -20,15 +20,14 @@ if (fs.existsSync(`${__dirname}/../CHANGELOG.md`)) {
 	fs.readFile(`${__dirname}/../CHANGELOG.md`, "utf8", (error, data) => {
 		if (error) {
 			logger.error(JSON.stringify(error));
+
+			return;
 		}
 
 		const changelog = data.match(/\n([\s\S]*)-->\n/gm);
-		changelog?.forEach((c) => {
-			fs.writeFile(`${__dirname}/../CHANGELOG_RELEASE.txt`, c, function writeJSON(error) {
-				if (error) {
-					logger.error(JSON.stringify(error));
-				}
-			});
-		});
+
+		if (changelog) {
+			fs.appendFileSync(`${__dirname}/../CHANGELOG_RELEASE.md`, changelog[0]);
+		}
 	});
 }

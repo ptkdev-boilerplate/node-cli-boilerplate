@@ -25,16 +25,16 @@ This is a [github template](https://github.blog/2019-06-06-generate-new-reposito
 -   💡 [Features](#-features)
 -   🚀 [How to use](#-usage)
 -   📚 [Documentation](#-documentation)
--   🔨 [Developer Mode](#-developer-mode)
+-   🔨 [Developer Mode](#-developer-mode)π
 -   -   🏁 [Run Project](#-run-project)
--   -   💾 [Setup Project](#-setup-project)
+-   -   💾 [Setup Project](#-setup-project)∏
 -   -   🚀 [Deploy](#-deploy)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 -   🍻 Community:
-    -   <img src="https://raw.githubusercontent.com/ptkdev-boilerplate/node-cli-boilerplate/main/.github/assets/social_telegram.png" height="18px"> Telegram ([🇬🇧 English](http://t.me/ptkdev_support) | [🇮🇹 Italian](http://t.me/ptkdev_support_italian))
-    -   <img src="https://raw.githubusercontent.com/ptkdev-boilerplate/node-cli-boilerplate/main/.github/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English](https://discord.gg/jqUSGPKdmA) | [🇮🇹 Italian](https://discord.gg/SJFcbvG6RU) | [🇵🇱 Polish](https://discord.gg/25vg4VFhb7))
-    -   <img src="https://raw.githubusercontent.com/ptkdev-boilerplate/node-cli-boilerplate/main/.github/assets/social_twitter.png" height="18px"> [Twitter](http://twitter.com/ptkdevio)
+    -   <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_telegram.png" height="18px"> Telegram ([🇬🇧 English](http://t.me/ptkdev_support) | [🇮🇹 Italian](http://t.me/ptkdev_support_italian))
+    -   <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English](https://discord.gg/jqUSGPKdmA) | [🇮🇹 Italian](https://discord.gg/SJFcbvG6RU) | [🇵🇱 Polish](https://discord.gg/25vg4VFhb7))
+    -   <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_twitter.png" height="18px"> [Twitter](http://twitter.com/ptkdevio)
 
 ## 💡 Features
 

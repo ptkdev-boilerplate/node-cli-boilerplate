@@ -8,12 +8,12 @@ jobs:
         runs-on: ubuntu-latest
         if: "!startsWith(github.event.head_commit.message, '[🚀 Release]')"
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@main
               with:
                   token: ${{ secrets.GIT_TOKEN }}
-            - uses: actions/setup-node@v2
+            - uses: actions/setup-node@main
               with:
-                  node-version: "16.x"
+                  node-version: "lts/*"
                   registry-url: "https://registry.npmjs.org"
             - run: git config --global user.name 'Patryk Rzucidlo (@PTKDev)'
             - run: git config --global user.email 'support@ptkdev.io'
@@ -29,10 +29,9 @@ jobs:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
             - name: Get current date
               id: date
-              run: echo "::set-output name=date::$(date +'%B %d, %Y')"
+              run: echo "date=$(date +'%B %d, %Y')" >> $GITHUB_OUTPUT
+            - run: echo "### CHANGELOG:" "v${{ steps.pkgjson.outputs.pkgversion }} (${{ steps.date.outputs.date }})" >> CHANGELOG_RELEASE.md
             - run: npm run github-workflow-changelog
-            - id: changelog
-              run: chmod +x ./scripts/changelog_release.sh && ./scripts/changelog_release.sh
             - name: Release snapshot
               id: release-snapshot
               uses: ncipollo/release-action@v1
@@ -41,7 +40,6 @@ jobs:
               with:
                   tag: ${{ steps.pkgjson.outputs.pkgversion }}
                   name: v${{ steps.pkgjson.outputs.pkgversion }}
-                  body: |
-                      ### CHANGELOG: v${{ steps.pkgjson.outputs.pkgversion }} (${{ steps.date.outputs.date }})${{ steps.changelog.outputs.changelog }}
+                  bodyFile: CHANGELOG_RELEASE.md
                   draft: false
                   prerelease: false
