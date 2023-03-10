@@ -51,7 +51,7 @@
 		"npm-publish-main": "git checkout main && npm publish",
 		"npm-publish-beta": "git checkout beta && npm publish --tag beta",
 		"npm-publish-nightly": "git checkout nightly && npm publish --tag nightly",
-		"fetch-shields": "ts-node scripts/update_dotfiles.ts",
+		"fetch-shields": "ts-node scripts/dotfiles.ts",
 		"contributors-generate": "npm run fetch-shields && all-contributors generate",
 		"all-shields-generate": "all-shields-generate",
 		"pre-commit": "ts-node scripts/copyright.ts && npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",

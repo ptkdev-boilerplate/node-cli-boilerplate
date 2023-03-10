@@ -30,6 +30,6 @@ const json_projects: any = await json_projects_response.json();
 
 json_shieldsrc.shields.push(header_badge);
 json_shieldsrc.shields.push(json_sponsors);
-json_shieldsrc.shields.push(json_projects[0]);
+json_projects.map((project: any) => json_shieldsrc.shields.push(project));
 
 writeFileSync(`${__dirname}/../.all-shieldsrc`, JSON.stringify(json_shieldsrc));
