@@ -30,7 +30,7 @@
 	},
 	"scripts": {
 		"setup": "ts-node scripts/setup.ts && ts-node scripts/changelog.ts && npm run pre-commit && npm install",
-		"start": "npm run release && node dist/cli/cli.js",
+		"start": "npm run release && node --no-warnings --experimental-specifier-resolution=node dist/cli/cli.js",
 		"link": "npm link",
 		"unlink": "npm unlink @ptkdev/node-cli-boilerplate",
 		"dev": "DEBUG=true npm run git-hash && ts-node scripts/configs.ts && ts-node scripts/rmdist.ts && nodemon --exec 'ts-node app/cli/cli.ts'",

@@ -7,9 +7,9 @@
  * @license: MIT License
  *
  */
-import configs from "@configs/config.js";
-import translations from "@app/routes/translations.js";
-import type { TranslateParamsInterface } from "@app/types/translate.interfaces.js";
+import configs from "@configs/config";
+import translations from "@app/routes/translations";
+import type { TranslateParamsInterface } from "@interface/translate.interfaces";
 
 /**
  * Replace Params

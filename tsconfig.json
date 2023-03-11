@@ -22,6 +22,9 @@
 			"@translations/*": ["./app/translations/*"],
 			"@configs/*": ["./app/configs/*"],
 			"@routes/*": ["./app/routes/*"],
+			"@utils/*": ["./app/utils/*"],
+			"@functions/*": ["./app/functions/*"],
+			"@interface/*": ["./app/types/*"],
 			"@app/*": ["./app/*"]
 		},
 		"typeRoots": ["app/**/types", "node_modules/@types"],
@@ -31,7 +34,8 @@
 		]
 	},
 	"ts-node": {
-		"esm": true
+		"esm": true,
+		"experimentalSpecifierResolution": "node"
 	},
 	"include": ["app/**/*"],
 	"exclude": ["node_modules/*", "dist/*", "scripts/*", "examples/*"]

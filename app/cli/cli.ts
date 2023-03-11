@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#! /usr/bin/env node --no-warnings --experimental-specifier-resolution=node
 /**
  * CLI
  * =====================
@@ -9,9 +9,9 @@
  * @license: MIT License
  *
  */
-import m from "@app/functions/module.js";
-import translate from "@translations/translate.js";
-import logger from "@app/utils/logger.js";
+import m from "@functions/module";
+import translate from "@translations/translate";
+import logger from "@utils/logger";
 
 const label = translate("hello", { name: "Patryk" }); // This show "Hello Patryk"! Is a literal template string from en.json
 const { app } = await m({ text: label });
