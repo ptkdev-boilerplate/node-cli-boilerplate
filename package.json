@@ -2,7 +2,7 @@
 	"name": "@ptkdev/node-cli-boilerplate",
 	"displayName": "Node Command Line Interface Boilerplate",
 	"description": "Create node cli with this user friendly boilerplate. Use this respository as template for your new npm command line interface project",
-	"version": "3.0.0-nightly.77",
+	"version": "3.0.0-beta.1",
 	"main": "dist/cli/cli.js",
 	"type": "module",
 	"bin": {
@@ -60,7 +60,7 @@
 		"pkg-upgrade": "npx --yes npm-check-updates -u && npm run pkg-legacy",
 		"pkg-upgrade-manually": "npx npm-check-updates --interactive && npm run pkg-legacy",
 		"pkg-legacy": "npm install eslint@7 @typescript-eslint/eslint-plugin@5 @typescript-eslint/parser@5 eslint-plugin-jest@27 @types/yargs@16 yargs@17 --legacy-peer-deps && npm install",
-		"prepare": "ts-patch install -s && husky init"
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@ptkdev/logger": "^1.8.0"
