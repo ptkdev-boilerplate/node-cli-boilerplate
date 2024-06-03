@@ -60,7 +60,7 @@
 		"pkg-upgrade": "npx --yes npm-check-updates -u && npm run pkg-legacy",
 		"pkg-upgrade-manually": "npx npm-check-updates --interactive && npm run pkg-legacy",
 		"pkg-legacy": "npm install eslint@7 @typescript-eslint/eslint-plugin@5 @typescript-eslint/parser@5 eslint-plugin-jest@27 @types/yargs@16 yargs@16 --legacy-peer-deps && npm install",
-		"prepare": "ts-patch install -s && husky init"
+		"prepare": "ts-patch install -s"
 	},
 	"dependencies": {
 		"@ptkdev/logger": "^1.8.0"

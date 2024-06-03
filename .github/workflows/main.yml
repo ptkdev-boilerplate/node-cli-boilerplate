@@ -20,6 +20,7 @@ jobs:
             - run: npm ci
             - run: npm run github-workflow-next-version -- --cmd main
             - run: npm run release
+            - run: npm run pre-commit
             - id: pkgjson
               run: chmod +x ./scripts/version.sh && ./scripts/version.sh
             - run: git add . && git commit -m "[🚀 Release] v${{ steps.pkgjson.outputs.pkgversion }}" && git push
