@@ -8,8 +8,8 @@
  * @license: MIT License
  *
  */
-import en from "@translations/en.json";
-import it from "@translations/it.json";
+import en from "@app/translations/en.json" assert { type: "json" };
+import it from "@app/translations/it.json" assert { type: "json" };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const translations: any = {

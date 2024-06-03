@@ -9,7 +9,7 @@
  */
 import configs from "@configs/config";
 import translations from "@app/routes/translations";
-import type { TranslateParamsInterface } from "@app/types/translate.interfaces";
+import type { TranslateParamsInterface } from "@interface/translate.interfaces";
 
 /**
  * Replace Params

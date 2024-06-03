@@ -7,13 +7,13 @@ jobs:
         runs-on: ubuntu-latest
         if: "!startsWith(github.event.head_commit.message, '[🚀 Release Nightly]')"
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@main
               with:
                   token: ${{ secrets.GIT_TOKEN }}
                   ref: nightly
-            - uses: actions/setup-node@v2
+            - uses: actions/setup-node@main
               with:
-                  node-version: "16.x"
+                  node-version: "lts/*"
                   registry-url: "https://registry.npmjs.org"
             - run: git config --global user.name 'Patryk Rzucidlo (@PTKDev)'
             - run: git config --global user.email 'support@ptkdev.io'

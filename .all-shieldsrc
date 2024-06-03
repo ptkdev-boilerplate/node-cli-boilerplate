@@ -1,8 +1,5 @@
 {
-	"files": [
-		"README.md",
-		"CHANGELOG.md"
-	],
+	"files": ["README.md", "CHANGELOG.md"],
 	"shields": [
 		{
 			"id": "header-badges",
