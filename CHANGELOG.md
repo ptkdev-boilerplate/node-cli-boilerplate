@@ -1,4 +1,4 @@
-# v3.0.0 (February 25, 2023)
+# v3.0.0 (June 03, 2024)
 
 -   New: porting to esm (type=module)
 -   Security: updated dependencies
