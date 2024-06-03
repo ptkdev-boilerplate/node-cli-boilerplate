@@ -13,7 +13,7 @@ module.exports = {
 	],
 	parserOptions: {
 		sourceType: "module",
-		ecmaVersion: 2019,
+		ecmaVersion: 2022,
 	},
 	plugins: ["jsdoc", "jest", "@typescript-eslint"],
 	globals: {
@@ -103,6 +103,6 @@ module.exports = {
 		"jsdoc/require-returns-description": 1,
 		"jsdoc/require-returns-type": 1,
 		"jsdoc/require-returns-check": 1,
-		"jsdoc/require-hyphen-before-param-description": 1,
+		"jsdoc/require-hyphen-before-param-description": 1
 	},
 };

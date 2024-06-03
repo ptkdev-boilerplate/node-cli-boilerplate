@@ -2,7 +2,7 @@
 
 > Code and Contributions
 
-Copyright (c) 2021 Patryk Rzucidło (PTKDev)
+Copyright (c) 2024 Patryk Rzucidło (PTKDev)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@ SOFTWARE.
 
 > Images, assets and logos
 
-Copyleft (c) 2022 Patryk Rzucidło (PTKDev)
+Copyleft (c) 2024 Patryk Rzucidło (PTKDev)
 
 #### You are free to:
 
@@ -50,7 +50,7 @@ No additional restrictions — You may not apply legal terms or technological me
 
 > Documentation and Translations
 
-Copyleft (c) 2022 Patryk Rzucidło (PTKDev)
+Copyleft (c) 2024 Patryk Rzucidło (PTKDev)
 
 #### You are free to:
 

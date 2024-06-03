@@ -1,18 +1,24 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * Reset CHANGELOG
  * =====================
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
+ *                Alì Shadman [@AliShadman95] (https://github.com/AliShadman95)
  *
  * @license: MIT License
  *
  */
-import * as fs from "fs";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-declare const __dirname: string;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const changelog = `# v1.0.0 (${new Date().toLocaleString("en-us", { month: "long", year: "numeric", day: "numeric" })})
+const changelog = `# v1.0.0 (${new Date().toLocaleString("en-us", {
+	month: "long",
+	year: "numeric",
+	day: "numeric",
+})})
 
 -   First release
 
@@ -21,4 +27,6 @@ const changelog = `# v1.0.0 (${new Date().toLocaleString("en-us", { month: "long
 `;
 
 fs.unlinkSync(`${__dirname}/../CHANGELOG.md`);
-fs.writeFileSync(`${__dirname}/../CHANGELOG.md`, `${changelog}`, { encoding: "utf8" });
+fs.writeFileSync(`${__dirname}/../CHANGELOG.md`, `${changelog}`, {
+	encoding: "utf8",
+});

@@ -1,10 +1,10 @@
 {
 	"compilerOptions": {
-		"module": "CommonJS",
-		"target": "ES6",
+		"module": "esnext",
+		"target": "es2022",
 		"sourceMap": true,
 		"outDir": "./dist/",
-		"lib": ["es2017", "es7", "es6", "DOM"],
+		"lib": ["esnext"],
 		"baseUrl": ".",
 		"resolveJsonModule": true,
 		"moduleResolution": "node",
@@ -22,6 +22,9 @@
 			"@translations/*": ["./app/translations/*"],
 			"@configs/*": ["./app/configs/*"],
 			"@routes/*": ["./app/routes/*"],
+			"@utils/*": ["./app/utils/*"],
+			"@functions/*": ["./app/functions/*"],
+			"@interface/*": ["./app/types/*"],
 			"@app/*": ["./app/*"]
 		},
 		"typeRoots": ["app/**/types", "node_modules/@types"],
