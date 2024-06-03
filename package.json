@@ -59,7 +59,7 @@
 		"pkg-update": "npm update",
 		"pkg-upgrade": "npx --yes npm-check-updates -u && npm run pkg-legacy",
 		"pkg-upgrade-manually": "npx npm-check-updates --interactive && npm run pkg-legacy",
-		"pkg-legacy": "npm install eslint@7 @typescript-eslint/eslint-plugin@5 @typescript-eslint/parser@5 eslint-plugin-jest@27 @types/yargs@16 yargs@17 --legacy-peer-deps && npm install",
+		"pkg-legacy": "npm install eslint@7 @typescript-eslint/eslint-plugin@5 @typescript-eslint/parser@5 eslint-plugin-jest@27 @types/yargs@16 yargs@16 --legacy-peer-deps && npm install",
 		"prepare": "ts-patch install -s && husky init"
 	},
 	"dependencies": {
@@ -93,7 +93,7 @@
 		"tsx": "^4.11.2",
 		"typescript": "^5.4.5",
 		"typescript-transform-paths": "^3.4.7",
-		"yargs": "^17.7.2"
+		"yargs": "^16.2.0"
 	},
 	"keywords": [
 		"ptkdev",
