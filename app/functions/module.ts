@@ -24,7 +24,7 @@ import type { ModuleInterface, ModuleResponseInterface } from "@interface/module
  * @return {Promise<ModuleResponseInterface>} (async) app() function that return string
  *
  */
-const m = async ({ text }: ModuleInterface): Promise<ModuleResponseInterface> => {
+const helloWorld = async ({ text }: ModuleInterface): Promise<ModuleResponseInterface> => {
 	const app = () => text;
 
 	return {
@@ -32,4 +32,4 @@ const m = async ({ text }: ModuleInterface): Promise<ModuleResponseInterface> =>
 	};
 };
 
-export default m;
+export default helloWorld;

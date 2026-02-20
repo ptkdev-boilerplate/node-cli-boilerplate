@@ -1,8 +1,10 @@
-# v3.0.0 (June 03, 2024)
+# v3.1.0 (February 20, 2026)
 
--   New: porting to esm (type=module)
--   Security: updated dependencies
--   Fix: readme, build and scripts
+- Fix: ESM runtime imports in dist output
+- Fix: copy translations JSON assets in dist
+- Test: Jest ESM configuration improvements
+- Chore: silence dotenv logs (quiet) and keep override enabled
+- Refactor: align app/scripts naming with code guidelines
 
 <!-- all-shields/sponsors-badges:START -->
 
@@ -10,39 +12,45 @@
 
 <!-- all-shields/sponsors-badges:END -->
 
+# v3.0.0 (June 03, 2024)
+
+- New: porting to esm (type=module)
+- Security: updated dependencies
+- Fix: readme, build and scripts
+
 # v2.0.3 (April 06, 2022)
 
--   Security: updated dependencies
--   Fix: readme, build and scripts
+- Security: updated dependencies
+- Fix: readme, build and scripts
 
 # v2.0.2 (February 21, 2022)
 
--   Refactor: CI/CD now update the version of the package to the latest (nightly)
+- Refactor: CI/CD now update the version of the package to the latest (nightly)
 
 # v2.0.1 (January 16, 2022)
 
--   Fix: CI/CD
+- Fix: CI/CD
 
 # v2.0.0 (January 16, 2022)
 
--   Refactor: code quality, scripts and interfaces
--   Security: updated packages
--   Features: CI/CD
+- Refactor: code quality, scripts and interfaces
+- Security: updated packages
+- Features: CI/CD
 
 # v1.0.20210930 (September 30, 2021)
 
--   Security: update
--   Feature: translations
--   Fix: logs
+- Security: update
+- Feature: translations
+- Fix: logs
 
 # v1.0.20210404 (April 04, 2021)
 
--   Feature: Setup
+- Feature: Setup
 
 # v1.0.20210331 (March 31, 2021)
 
--   Minor updates
+- Minor updates
 
 # v1.0.20210330 (March 30, 2021)
 
--   First release
+- First release

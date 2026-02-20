@@ -8,14 +8,21 @@
  * @license: MIT License
  *
  */
-import en from "@app/translations/en.json" assert { type: "json" };
-import it from "@app/translations/it.json" assert { type: "json" };
+import type { TranslationDictionaryInterface, TranslationsInterface } from "@interface/translate.interfaces";
+import { readFileSync } from "node:fs";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const translations: any = {
+const en = JSON.parse(
+	readFileSync(new URL("../translations/en.json", import.meta.url), { encoding: "utf-8" }),
+) as TranslationDictionaryInterface;
+
+const it = JSON.parse(
+	readFileSync(new URL("../translations/it.json", import.meta.url), { encoding: "utf-8" }),
+) as TranslationDictionaryInterface;
+
+const translations: TranslationsInterface = {
 	en,
 	it,
 };
 
-export { it, en };
+export { en, it };
 export default translations;

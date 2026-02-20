@@ -7,8 +7,8 @@
  * @license: MIT License
  *
  */
-import configs from "@configs/config";
 import translations from "@app/routes/translations";
+import configs from "@configs/config";
 import type { TranslateParamsInterface } from "@interface/translate.interfaces";
 
 /**
@@ -25,6 +25,10 @@ import type { TranslateParamsInterface } from "@interface/translate.interfaces";
  */
 const replaceParams = (text: string, language_params: TranslateParamsInterface): string => {
 	for (const [key, value] of Object.entries(language_params)) {
+		if (typeof value === "undefined") {
+			continue;
+		}
+
 		text = text.replace(`{{${key}}}`, value);
 	}
 

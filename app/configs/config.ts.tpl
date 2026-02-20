@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-dotenv.config();
+dotenv.config({ override: true, quiet: true });
 
 export default {
 	// Default language i18n (from /app/translations/)

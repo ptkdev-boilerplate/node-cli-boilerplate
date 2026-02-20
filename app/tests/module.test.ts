@@ -7,9 +7,9 @@
  * @license: MIT License
  *
  */
-import m from "@functions/module";
+import helloWorld from "@functions/module";
 
 test("show hello world", async () => {
-	const { app } = await m({ text: "hello-world" });
+	const { app } = await helloWorld({ text: "hello-world" });
 	expect(app()).toBe("hello-world");
 });
