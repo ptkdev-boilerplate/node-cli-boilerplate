@@ -7,6 +7,6 @@ about: If you need paid support with hight priority donate correct tier on githu
 
 If you need paid support with hight priority donate correct tier on:
 
--   https://github.com/sponsors/ptkdev
+- https://github.com/sponsors/ptkdev
 
 Please send me an email (support@ptkdev.io) before donation, i try provide correct price quotation for your bug or new feature.

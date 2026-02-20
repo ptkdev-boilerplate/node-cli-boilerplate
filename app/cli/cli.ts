@@ -2,7 +2,10 @@
 /**
  * CLI
  * =====================
- * Command Line Interface - This show "Hello Patryk"! Is a literal template string from en.json
+ * Command Line Interface
+ *
+ * Notes:
+ * - The label uses the "hello" template string from `app/translations/en.json`.
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
  *
@@ -13,7 +16,7 @@ import helloWorld from "@functions/module";
 import translate from "@translations/translate";
 import logger from "@utils/logger";
 
-const label = translate("hello", { name: "Patryk" }); // This show "Hello Patryk"! Is a literal template string from en.json
+const label = translate("hello", { name: "Patryk" });
 const { app } = await helloWorld({ text: label });
 
 logger.info(app());

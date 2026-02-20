@@ -1,9 +1,9 @@
 # v3.1.0 (February 20, 2026)
 
 - Fix: ESM runtime imports in dist output
-- Fix: copy translations JSON assets in dist
-- Test: Jest ESM configuration improvements
-- Chore: silence dotenv logs (quiet) and keep override enabled
+- Fix: copy translation JSON assets to dist
+- Test: Jest configuration improvements (no experimental VM modules)
+- Chore: silence dotenv log output (quiet) and keep override enabled
 - Refactor: align app/scripts naming with code guidelines
 
 <!-- all-shields/sponsors-badges:START -->

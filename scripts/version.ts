@@ -8,12 +8,11 @@
  * @license: MIT License
  *
  */
-import fs from "fs";
 import Logger from "@ptkdev/logger";
-import yargs from "yargs";
+import fs, { readFileSync } from "fs";
 import path from "path";
-import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
+import yargs from "yargs";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const pkg = JSON.parse(readFileSync(`${__dirname}/../package.json`, "utf8"));
 
@@ -22,7 +21,19 @@ const logger = new Logger();
 const version = pkg.version.split(".");
 let next_version, patch;
 
-const argv: any = yargs(process.argv.slice(2)).argv;
+type VersionCommandInterface = "nightly" | "nightly-next" | "beta" | "main";
+type VersionArgsInterface = {
+	cmd?: VersionCommandInterface;
+};
+
+const argv = yargs(process.argv.slice(2))
+	.options({
+		cmd: {
+			type: "string",
+			choices: ["nightly", "nightly-next", "beta", "main"] as const,
+		},
+	})
+	.parseSync() as unknown as VersionArgsInterface;
 
 switch (argv.cmd) {
 	case "nightly":

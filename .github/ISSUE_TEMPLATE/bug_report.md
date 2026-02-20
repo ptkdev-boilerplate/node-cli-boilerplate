@@ -9,10 +9,10 @@ about: Create a report to help us improve (low priority)
 
 <!-- Replace or update the values below with your own: -->
 
--   **App Version:** v1.0.0
--   **Node Version:** v13.0.0
--   **Operating System:** Windows 10
--   **Browser:** Google Chrome v80
+- **App Version:** v1.0.0
+- **Node Version:** v13.0.0
+- **Operating System:** Windows 10
+- **Browser:** Google Chrome v80
 
 ### Expected Behavior
 

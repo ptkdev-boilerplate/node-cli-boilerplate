@@ -2,13 +2,14 @@
 
 <!-- all-shields/header-badges:START -->
 
-[![v3.0.4-nightly.0](https://img.shields.io/badge/version-v3.0.4--nightly.0-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-cli-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-cli-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
+[![v3.1.0-nightly.0](https://img.shields.io/badge/version-v3.1.0--nightly.0-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/node-cli-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/node-cli-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
 
 <!-- all-shields/header-badges:END -->
 
-Create node cli with this user friendly boilerplate. Use this respository as template for your new npm command line interface project
+Create a Node CLI with this user-friendly boilerplate. Use this repository as a template for your new npm command line interface project.
 
-This is a [github template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), you can fork it or [use as template](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/generate) for start new project with this repository as hello-world. I hate start new project with empty template, often i missing correct configuration, readme instruction or i need of samples of code. Use this repository as template solve this problem.
+This is a [GitHub template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/). You can fork it or [use it as a template](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/generate) to start a new project with this repository as a hello-world base.
+I hate starting new projects from an empty template: I often miss the correct configuration, README instructions, or code samples. Using this repository as a template solves that problem.
 
 ## 🎁 Support: Donate
 
@@ -22,34 +23,34 @@ This is a [github template](https://github.blog/2019-06-06-generate-new-reposito
 
 ## 📎 Menu
 
--   💡 [Features](#-features)
--   🚀 [How to use](#-usage)
--   📚 [Documentation](#-documentation)
--   🔨 [Developer Mode](#-developer-mode)
--   -   🏁 [Run Project](#-run-project)
--   -   💾 [Setup Project](#-setup-project)
--   -   🚀 [Deploy](#-deploy)
--   👨‍💻 [Contributing](#-contributing)
--   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
--   🍻 Community:
-    -   <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_telegram.png" height="18px"> Telegram ([🇬🇧 English](http://t.me/ptkdev_support) | [🇮🇹 Italian](http://t.me/ptkdev_support_italian))
-    -   <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English](https://discord.gg/jqUSGPKdmA) | [🇮🇹 Italian](https://discord.gg/SJFcbvG6RU) | [🇵🇱 Polish](https://discord.gg/25vg4VFhb7))
-    -   <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_twitter.png" height="18px"> [Twitter](http://twitter.com/ptkdevio)
+- 💡 [Features](#-features)
+- 🚀 [How to use](#-usage)
+- 📚 [Documentation](#-documentation)
+- 🔨 [Developer Mode](#-developer-mode)
+-   - 🏁 [Run Project](#-run-project)
+-   - 💾 [Setup Project](#-setup-project)
+-   - 🚀 [Deploy](#-deploy)
+- 👨‍💻 [Contributing](#-contributing)
+- 🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
+- 🍻 Community:
+    - <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_telegram.png" height="18px"> Telegram ([🇬🇧 English](http://t.me/ptkdev_support) | [🇮🇹 Italian](http://t.me/ptkdev_support_italian))
+    - <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English](https://discord.gg/jqUSGPKdmA) | [🇮🇹 Italian](https://discord.gg/SJFcbvG6RU) | [🇵🇱 Polish](https://discord.gg/25vg4VFhb7))
+    - <img src="https://raw.githubusercontent.com/ptkdev/dotfiles/main/assets/social_twitter.png" height="18px"> [Twitter](http://twitter.com/ptkdevio)
 
 ## 💡 Features
 
--   [✔️] Easy to use
--   [✔️] MIT License
--   [✔️] Make CLI Package for npm
--   [✔️] Friendly boilerplate + Github templates
--   [✔️] Typescript + TSPaths preconfigured
--   [✔️] Userfriendly folders tree
--   [✔️] Prettiers and ESLint preconfigured
--   [✔️] all-contributors-cli and all-shields-cli preconfigured
--   [✔️] JEST Test preconfigured
--   [✔️] Full async code
--   [✔️] Github and Vscode dotfiles preconfigured
--   [✔️] Translations: 🇬🇧 🇮🇹 🇵🇱 (Help me ❤️)
+- [✔️] Easy to use
+- [✔️] MIT License
+- [✔️] Create a CLI package for npm
+- [✔️] Friendly boilerplate + GitHub templates
+- [✔️] TypeScript + TSPaths preconfigured
+- [✔️] User-friendly folder tree
+- [✔️] Prettier and ESLint preconfigured
+- [✔️] all-contributors-cli and all-shields-cli preconfigured
+- [✔️] Jest tests preconfigured
+- [✔️] Full async code
+- [✔️] GitHub and VS Code dotfiles preconfigured
+- [✔️] Translations: 🇬🇧 🇮🇹 🇵🇱 (Help me ❤️)
 
 ## 🚀 Usage
 
@@ -66,24 +67,24 @@ You can use npx, example: `npx @ptkdev/node-cli-boilerplate`
 2. Run `npm install`
 3. Run `npm run dev` for watch mode
 
-If you want to try cli locally:
+If you want to try the CLI locally:
 
 4. Run `npm run release`
 5. Run `npm link` (on unix/mac use `sudo npm link`)
-6. Run `node-cli-boilerplate` anywhere for execute command line tool
+6. Run `node-cli-boilerplate` anywhere to execute the command line tool
 
-For uninstall it run `npm unlink` (on unix/mac use `sudo npm unlink`)
+To uninstall it, run `npm unlink` (on Unix/macOS use `sudo npm unlink`)
 
 #### 💾 Setup Project
 
-If you want replace all strings (example: package name, author, urls, etc...) in markdown file, source files and others files of this project you need edit `setup.json` with correct values and run `npm run setup`.
+If you want to replace all strings (e.g., package name, author, URLs, etc.) in Markdown files, source files, and other files in this project, edit `setup.json` with the correct values and run `npm run setup`.
 
 #### 🚀 Deploy
 
-For create npm package:
+To create an npm package:
 
--   Run `npm run release`
--   Run `npm publish`
+- Run `npm run release`
+- Run `npm publish`
 
 ## 📚 Documentation
 
@@ -91,7 +92,7 @@ Run `npm run docs`
 
 ## 👑 Backers and Sponsors
 
-Thanks to all our backers! 🙏 Donate 3$ or more on [paypal](https://www.paypal.me/ptkdev), [ko-fi](https://ko-fi.com/ptkdev) or [github](https://github.com/sponsors/ptkdev) and send me [email](mailto:support@ptkdev.io) with your avatar and url.
+Thanks to all our backers! 🙏 Donate $3 or more via [PayPal](https://www.paypal.me/ptkdev), [Ko-fi](https://ko-fi.com/ptkdev), or [GitHub Sponsors](https://github.com/sponsors/ptkdev), and send me an [email](mailto:support@ptkdev.io) with your avatar and URL.
 
 [![](https://api.ptkdev.io/backers/sponsor1.png?)](https://api.ptkdev.io/backers/sponsor1.html) [![](https://api.ptkdev.io/backers/sponsor2.png?)](https://api.ptkdev.io/backers/sponsor2.html) [![](https://api.ptkdev.io/backers/sponsor-kofi1.png?)](https://api.ptkdev.io/backers/sponsor-kofi1.html) [![](https://api.ptkdev.io/backers/sponsor-kofi2.png?)](https://api.ptkdev.io/backers/sponsor-kofi2.html) [![](https://api.ptkdev.io/backers/sponsor-kofi3.png?)](https://api.ptkdev.io/backers/sponsor-kofi3.html) [![](https://api.ptkdev.io/backers/sponsor3.png?)](https://api.ptkdev.io/backers/sponsor3.html) [![](https://api.ptkdev.io/backers/sponsor4.png?)](https://api.ptkdev.io/backers/sponsor4.html) [![](https://api.ptkdev.io/backers/sponsor5.png?)](https://api.ptkdev.io/backers/sponsor5.html) [![](https://api.ptkdev.io/backers/sponsor6.png?)](https://api.ptkdev.io/backers/sponsor6.html) [![](https://api.ptkdev.io/backers/sponsor7.png?)](https://api.ptkdev.io/backers/sponsor7.html) [![](https://api.ptkdev.io/backers/sponsor8.png?)](https://api.ptkdev.io/backers/sponsor8.html) [![](https://api.ptkdev.io/backers/sponsor9.png?)](https://api.ptkdev.io/backers/sponsor9.html) [![](https://api.ptkdev.io/backers/sponsor10.png?)](https://api.ptkdev.io/backers/sponsor10.html) [![](https://api.ptkdev.io/backers/sponsor11.png?)](https://api.ptkdev.io/backers/sponsor11.html) [![](https://api.ptkdev.io/backers/sponsor12.png?)](https://api.ptkdev.io/backers/sponsor12.html) [![](https://api.ptkdev.io/backers/sponsor13.png?)](https://api.ptkdev.io/backers/sponsor13.html) [![](https://api.ptkdev.io/backers/sponsor14.png?)](https://api.ptkdev.io/backers/sponsor14.html) [![](https://api.ptkdev.io/backers/sponsor15.png?)](https://api.ptkdev.io/backers/sponsor15.html) [![](https://api.ptkdev.io/backers/backer1.png?)](https://api.ptkdev.io/backers/backer1.html) [![](https://api.ptkdev.io/backers/backer2.png?)](https://api.ptkdev.io/backers/backer2.html) [![](https://api.ptkdev.io/backers/backer3.png?)](https://api.ptkdev.io/backers/backer3.html) [![](https://api.ptkdev.io/backers/backer4.png?)](https://api.ptkdev.io/backers/backer4.html) [![](https://api.ptkdev.io/backers/backer5.png?)](https://api.ptkdev.io/backers/backer5.html) [![](https://api.ptkdev.io/backers/backer6.png?)](https://api.ptkdev.io/backers/backer6.html) [![](https://api.ptkdev.io/backers/backer7.png?)](https://api.ptkdev.io/backers/backer7.html) [![](https://api.ptkdev.io/backers/backer8.png?)](https://api.ptkdev.io/backers/backer8.html) [![](https://api.ptkdev.io/backers/backer9.png?)](https://api.ptkdev.io/backers/backer9.html) [![](https://api.ptkdev.io/backers/backer10.png?)](https://api.ptkdev.io/backers/backer10.html) [![](https://api.ptkdev.io/backers/backer11.png?)](https://api.ptkdev.io/backers/backer11.html) [![](https://api.ptkdev.io/backers/backer12.png?)](https://api.ptkdev.io/backers/backer12.html) [![](https://api.ptkdev.io/backers/backer13.png?)](https://api.ptkdev.io/backers/backer13.html) [![](https://api.ptkdev.io/backers/backer14.png?)](https://api.ptkdev.io/backers/backer14.html) [![](https://api.ptkdev.io/backers/backer15.png?)](https://api.ptkdev.io/backers/backer15.html) [![](https://api.ptkdev.io/backers/backer16.png?)](https://api.ptkdev.io/backers/backer16.html) [![](https://api.ptkdev.io/backers/backer17.png?)](https://api.ptkdev.io/backers/backer17.html) [![](https://api.ptkdev.io/backers/backer18.png?)](https://api.ptkdev.io/backers/backer18.html) [![](https://api.ptkdev.io/backers/backer19.png?)](https://api.ptkdev.io/backers/backer19.html) [![](https://api.ptkdev.io/backers/backer20.png?)](https://api.ptkdev.io/backers/backer20.html) [![](https://api.ptkdev.io/backers/backer21.png?)](https://api.ptkdev.io/backers/backer21.html) [![](https://api.ptkdev.io/backers/backer22.png?)](https://api.ptkdev.io/backers/backer22.html) [![](https://api.ptkdev.io/backers/backer23.png?)](https://api.ptkdev.io/backers/backer23.html) [![](https://api.ptkdev.io/backers/backer24.png?)](https://api.ptkdev.io/backers/backer24.html) [![](https://api.ptkdev.io/backers/backer25.png?)](https://api.ptkdev.io/backers/backer25.html) [![](https://api.ptkdev.io/backers/backer26.png?)](https://api.ptkdev.io/backers/backer26.html) [![](https://api.ptkdev.io/backers/backer27.png?)](https://api.ptkdev.io/backers/backer27.html) [![](https://api.ptkdev.io/backers/backer28.png?)](https://api.ptkdev.io/backers/backer28.html) [![](https://api.ptkdev.io/backers/backer29.png?)](https://api.ptkdev.io/backers/backer29.html)
 
@@ -117,7 +118,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-> 💰 In the future, if the donations allow it, I would like to share some of the success with those who helped me the most. For me open source is share of code, share development knowledges and share donations!
+> 💰 In the future, if donations allow it, I would like to share some of the success with those who helped me the most. To me, open source means sharing code, sharing development knowledge, and sharing donations!
 
 ## 🦄 Other Projects
 
@@ -147,8 +148,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 ## 💫 License
 
--   Code and Contributions have **MIT License**
--   Images and logos have **CC BY-NC 4.0 License**
--   Documentations and Translations have **CC BY 4.0 License**
+- Code and Contributions have **MIT License**
+- Images and logos have **CC BY-NC 4.0 License**
+- Documentation and translations have **CC BY 4.0 License**
 
-###### Copyleft (c) 2024 [Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>
+###### Copyleft (c) 2026 [Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>

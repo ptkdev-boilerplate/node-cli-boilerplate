@@ -1,7 +1,7 @@
 /**
  * Setup
  * =====================
- * Replace package name, authors, url with others values.
+ * Replace package name, author, and URLs with other values.
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
  *
@@ -9,9 +9,9 @@
  *
  */
 import Logger from "@ptkdev/logger";
-import replace from "replace-in-file";
-import path from "path";
 import { readFileSync } from "fs";
+import path from "path";
+import replace from "replace-in-file";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -112,7 +112,7 @@ const logger = new Logger();
 		await replace.sync({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-			from: /Create node cli with this user friendly boilerplate. Use this respository as template for your new npm command line interface project/g,
+			from: /Create a Node CLI with this user-friendly boilerplate\. Use this repository as a template for your new npm command line interface project\./g,
 			to: setup.description,
 		});
 	} catch (error) {

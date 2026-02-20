@@ -2,7 +2,7 @@
  * Node Module
  * =====================
  *
- * Show hello world text
+ * Returns the provided text
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
  *
@@ -15,13 +15,13 @@ import type { ModuleInterface, ModuleResponseInterface } from "@interface/module
  * Hello World
  * =====================
  *
- * Print hello-world, run with: npx @ptkdev/node-cli-boilerplate
+ * Prints the provided text. Run with: npx @ptkdev/node-cli-boilerplate
  *
  * @interface [ModuleInterface ModuleResponseInterface](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/app/types/module.interfaces.ts)
  *
  * @param {string} {text} - input string
  *
- * @return {Promise<ModuleResponseInterface>} (async) app() function that return string
+ * @return {Promise<ModuleResponseInterface>} (async) app() function that returns a string
  *
  */
 const helloWorld = async ({ text }: ModuleInterface): Promise<ModuleResponseInterface> => {

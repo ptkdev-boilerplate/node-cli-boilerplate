@@ -2,7 +2,8 @@
  * Node Module (Library) Boilerplate
  * =====================
  *
- * Create your node module (library) with this user friendly boilerplate. Use this respository as template for your new node library/module
+ * Create your Node module (library) with this user-friendly boilerplate.
+ * Use this repository as a template for your new Node library/module.
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
  *
@@ -19,11 +20,11 @@ export interface ModuleInterface {
 	/**
 	 * Input text
 	 * =====================
-	 * Set text
+	 * Set the text.
 	 *
 	 * @interface [ModuleInterface](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/app/types/module.interfaces.ts)
 	 *
-	 * @param { String } text - input text
+	 * @param {string} text - input text
 	 *
 	 */
 	text: string;
@@ -38,11 +39,11 @@ export interface ModuleResponseInterface {
 	/**
 	 * Output text
 	 * =====================
-	 * Get text
+	 * Get the text.
 	 *
 	 * @interface [ModuleResponseInterface](https://github.com/ptkdev-boilerplate/node-cli-boilerplate/blob/main/app/types/module.interfaces.ts)
 	 *
-	 * @return {fn} string - run app() for output text
+	 * @return {Function} app - call app() to get the output text
 	 *
 	 */
 	app(): string;

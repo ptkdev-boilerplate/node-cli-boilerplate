@@ -1,7 +1,7 @@
 {
 	"name": "@ptkdev/node-cli-boilerplate",
 	"displayName": "Node Command Line Interface Boilerplate",
-	"description": "Create node cli with this user friendly boilerplate. Use this respository as template for your new npm command line interface project",
+	"description": "Create a Node CLI with this user-friendly boilerplate. Use this repository as a template for your new npm command line interface project.",
 	"version": "3.1.0-nightly.0",
 	"main": "dist/cli/cli.js",
 	"type": "module",
@@ -36,7 +36,7 @@
 		"dev": "DEBUG=true npm run git-hash && tsx scripts/configs.ts && tsx scripts/rmdist.ts && nodemon --exec 'tsx app/cli/cli.ts'",
 		"build": "tsx scripts/configs.ts && tsx scripts/rmdist.ts && tsc && tsx scripts/assets.ts && tsx scripts/esm_imports.ts",
 		"release": "DEBUG=false npm run git-hash && npm run build && tsc --declaration --emitDeclarationOnly",
-		"test": "NODE_OPTIONS=--experimental-vm-modules jest app",
+		"test": "jest app",
 		"docs": "git submodule update --recursive && markserv ./README.md",
 		"lint": "npm run lint-prettify && eslint . --cache --ext .ts,.js",
 		"lint-fix": "npm run lint-prettify && eslint . --cache --ext .ts,.js --fix",
